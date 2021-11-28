@@ -111,5 +111,113 @@ nav{
   top: 0;
   width: 100%;
 }
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/*-- Per statike te Headerit*/
+
+.dua {
+
+  width: 400px;
+  padding: 41px;
+  border: 70px solid rgb(230, 197, 11);
+  margin: 0;  }
+ 
+.ritta{
+
+  width: 400px;
+  padding: 69px;
+  border: 70px solid rgb(230, 197, 11);
+  margin: 0;
+
+}
+.bebee{
+  
+  width: 400px;
+  padding: 73px;
+  border: 70px solid rgb(230, 197, 11);
+  margin: 0;
+image-rendering: initial;
+font-size:auto ;
+
+}
+
+        </style>
+
+    </head>
+
+<body>
+    <section class="header">
+        <h1>Life and Music </h1>
+        <nav>
+          <div class="nav- links" id="nav-linkss">
+              
+                <ul>
+                   <li> <a  href="World without music.html"> Home </li> </a> 
+                    <li><a href="World without music 1.html"> Song</li> </a> 
+                   <li> <a class="active"href="World without music 2.html"> Singers</li> </a> 
+                    <li><a href="World without music 3.html"> History</li> </a> 
+                   
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="singers">
+      <table>
+        <th>
+          <td>
+    <div class="dua">
+      <img src="dua.jfif" class="icn left">
+      <p style="color: green;"><b>DUA LIPA: born 22 August 1995) is an English singer, songwriter and model. After working as a model, she signed with Warner Bros. Records in 2014 and released her eponymous debut album in 2017. 
+        The album peaked at number three on the UK Albums Chart and yielded eight singles, including "Be the One", "IDGAF", and the UK number-one single "New Rules", which also peaked at number six in the US. The album has been certified platinum in numerous countries worldwide and won Lipa the Brit Awards for British Female Solo Artist and British Breakthrough Act in 2018.
+        
+        <a href="https://www.youtube.com/c/dualipa/featured" style="color: black;">  Dua's YouTube Chanel</a></b>
+    </div>
+          </td>
+        </th>
+        <th>
+          <td>
+    <div class="ritta">
+      <img src="RITA.jfif" class="icn left">
+      <p style="color: green; font: 1em sans-serif;" ><b>RITA ORA: Rita Sahatçiu Ora (born Rita Sahatçiu, 26 November 1990) is a British singer, songwriter and actress. She rose to prominence in February 2012 when she featured on DJ Fresh's single "Hot Right Now", which reached number one in the UK. Her debut studio album, Ora, released in August 2012, debuted at number one in the United Kingdom.
+      
+        <a href="https://www.youtube.com/channel/UCfSAqqftdc7FM1SY5vJjKfA" style="color: black;">    Rita's YouTube Chanel</a></b>
+    </div>
+          </td>
+        </th>
+        <th>
+          <td>
+    <div class="bebee">
+      <img src="bebee.jfif" class="icn left">
+      <p style="color: green;"><b> BLETA REXHA: known professionally as Bebe Rexha, is an American singer and songwriter. After signing with Warner Records in 2013, Rexha received songwriting credits on Eminem's single "The Monster" (which later received the Grammy Award for Best Rap/Sung Performance) and has also contributed songwriting to songs recorded by Shinee, Selena Gomez, and Nick Jonas.
+        
+        <a href="https://www.youtube.com/channel/UC5-gWZXAQqSGVfPHkA7NRiQ" target="_blank" style="color: black;">     Bebe's YouTube Chanel</a></b>
+    </div>
+          </td>
+        </th>
+       
+      </table>
+    
+    
+    
+    
+  </section>
+ 
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("nav-linkss");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
 </style>
 </head>
